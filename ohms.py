@@ -10,7 +10,7 @@ def Elec_Power(V, I, PF):
     return P, Q, S
 
 # Streamlit UI
-st.title('2305A21L43-PS2')
+st.title('2305A21L19-PS2')
 
 # Input fields for voltage, current, and power factor
 V = st.number_input('Enter Voltage (V) in Volts:', min_value=100.0, step=1.0)
