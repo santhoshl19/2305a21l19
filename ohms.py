@@ -3,11 +3,11 @@ import math
 
 # Define the Elec_Power function
 def Elec_Power(V, I, PF):
-    phi = math.acos(PF)/1000
+    phi = math.acos(PF)
     P = V * I * math.cos(phi)/1000
     Q = V * I * math.sin(phi)/1000
     S = V * I/1000
-    return P, Q, S/1000
+    return P, Q, S
 
 # Streamlit UI
 st.title('2305A21L19-PS2')
