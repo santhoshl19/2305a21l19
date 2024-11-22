@@ -6,8 +6,8 @@ def Elec_Power(V, I, PF):
     phi = math.acos(PF)/1000
     P = V * I * math.cos(phi)/1000
     Q = V * I * math.sin(phi)/1000
-    S = V * I
-    return P, Q, S
+    S = V * I/1000
+    return P, Q, S/1000
 
 # Streamlit UI
 st.title('2305A21L19-PS2')
