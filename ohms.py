@@ -3,9 +3,9 @@ import math
 
 # Define the Elec_Power function
 def Elec_Power(V, I, PF):
-    phi = math.acos(PF)
-    P = V * I * math.cos(phi)
-    Q = V * I * math.sin(phi)
+    phi = math.acos(PF)/1000
+    P = V * I * math.cos(phi)/1000
+    Q = V * I * math.sin(phi)/1000
     S = V * I
     return P, Q, S
 
